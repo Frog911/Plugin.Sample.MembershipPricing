@@ -1,0 +1,37 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-MembershipLevelPolicy",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "MembershipLevelPolicy",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+        {
+            "$type": "Plugin.Sample.MembershipPricing.Policies.MembershipLevelPolicy, Plugin.Sample.MembershipPricing",
+            "MembershipLevels": {
+                "$type": "System.Collections.Generic.List`1[[Plugin.Sample.MembershipPricing.Policies.MembershipLevel, Plugin.Sample.MembershipPricing]], mscorlib",
+                "$values": [
+                    {
+                        "$type": "Plugin.Sample.MembershipPricing.Policies.MembershipLevel, Plugin.Sample.MembershipPricing",
+                        "MemerbshipLevelName": "Silver"
+                    },
+                    {
+                        "$type": "Plugin.Sample.MembershipPricing.Policies.MembershipLevel, Plugin.Sample.MembershipPricing",
+                        "MemerbshipLevelName": "Gold"
+                    },
+                    {
+                        "$type": "Plugin.Sample.MembershipPricing.Policies.MembershipLevel, Plugin.Sample.MembershipPricing",
+                        "MemerbshipLevelName": "Platinum"
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Plugin.Sample.MembershipPricing.Policies.ImportMembershipPricesPolicy, Plugin.Sample.MembershipPricing",
+            "CurrencySetId": "{0F65742E-317F-44B0-A4DE-EBF06209E8EE}",
+            "PriceBookName": "SamplePricebook"
+        }
+    ]
+  }
+}
